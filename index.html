@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+body{
+
+background-color: rgb(217, 217, 245);
+
+}
+
+.sss{
+            display: flex;
+            gap: 20px;
+            
+            
+
+        }
+
+
+ .entete {
+
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(255, 255, 255);
+            color: rgb(1, 0, 0);
+            text-align: center;
+            position: fixed;
+            width: 100%;   
+            top: 0;  
+
+        }
+ .cercle2 {
+
+            height: 50px;
+            width: 50px;
+            border: 2px solid ;
+            background-color: rgb(63, 133, 247) ;
+            color: aliceblue;
+            border-radius: 50px;
+    
+        }
+ .contenu{
+  
+           background-color: rgb(254, 254, 255);
+            height: 40px;
+            width: 20%;
+            color: rgb(63, 143, 247);
+            border-radius: 30px;
+            text-align: center;
+            margin-top: 100px;
+            display: flex;
+           align-items: center;
+           justify-content: center;
+
+
+
+        }
+        
+ 
+.texte{
+        
+          width: 50%;
+         text-align: left;
+
+       } 
+.photo{
+        float: right;
+    
+        
+
+
+}
+
+.bloc{
+
+        display: flex;
+        padding: 40px; 
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(255, 255, 255);
+      border-radius: 40px;
+        
+
+}
+.mespages{
+  
+           background-color: rgb(53, 53, 240);
+            height: 40px;
+            width: 20%;
+            color: rgb(255, 255, 255);
+            border-radius: 30px;
+            text-align: center;
+            margin-top: 100px;
+            display: flex;
+           align-items: center;
+           justify-content: center;
+
+
+
+        }
+
+    
+
+
+
+        
+section { padding: 60px 40px; }
+
+.titre {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--texte);
+}
+
+.grille {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 9000px;
+  margin: 0 auto;
+}
+
+.apropos{
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  padding: 28px 24px;
+  min-height: 160px;
+}
+
+.apropos h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  color: #0d519e;
+  margin-bottom: 12px;
+}
+        
+
+.apropos p {
+  font-size: 13.5px;
+  color: var(--texte-clair);
+  line-height: 1.7;
+}
+.galerie-grille {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.galerie {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  height: 220px;
+  cursor: pointer;
+}
+
+.galerie img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.galerie:hover img { 
+  cursor: pointer;
+  transform: scale(1.06); 
+}
+
+.description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 50px 16px 16px;
+  background: linear-gradient(transparent, rgba(255, 255, 255, 0.75));
+  color: rgb(80, 103, 248);
+}
+
+.description h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.description p {
+  font-size: 12px;
+  color: #312f2d;
+  font-weight: 300;
+}
+
+
+.contentcercle{
+
+
+display: flex;
+justify-content: space-around;
+
+}
+.cercle{
+
+    width: 250px;
+    height: 100px;
+border: 2px solid white;
+background-color: #ffffff;
+border-radius: 20px;
+
+margin: 40px auto;
+}
+
+h3{
+
+color: #0d519e;
+text-align: center;
+
+}
+
+p{
+text-align: center;
+
+
+}
+
+
+  .footer {
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(46, 19, 244);
+            color: rgb(254, 254, 254);
+            margin-top: 20px;
+            height: 200px;
+
+  }
+
+  h4{
+text-align: center;
+
+
+  }
+
+  .parafin{
+
+text-align: center;
+margin-top: 20px;
+color: rgb(31, 29, 29);
+border-radius: 20px;
+
+  }
+
+
+
+   .footer2 {
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(255, 255, 255);
+            color: rgb(254, 254, 254);
+            margin-top: 20px;
+        
+   }
+
+
+</style>
+</head>
+<body>
+    
+
+
+ <div class="entete">
+
+        <div class="cercle2">
+            <H5>A M</H5>
+        </div>
+
+    <div class="sss">
+            <H5>acceuil</H5>
+            <H5> a prpops</H5>
+            <H5>pojet</H5>
+            <h5>profil</h5>
+            <H5>contact</H5>
+    </div>
+
+      </div>
+
+
+<div class="contenu">
+            <H4>portfolio modene et evolutif</H4>
+</div>
+
+
+<div class="bloc">
+
+<div class="texte">
+ <h5>
+CONSTRUIRE MON  <BR>PARCOURS AVEC </BR>
+ <BR>PASSION, CREATIVITÉ ET</BR>
+ <BR> AMBITION </BR>
+
+ </h5>
+
+
+ <P> bonjour je suis awa Lorem ipsum dolor sit, amet consectetur <BR></BR> adipisicing elit. Vero minus tenetur molestiae esse porro dolore <BR></BR> praesentium modi iure doloribus quis magnam reprehenderit iusto  <br>delectus tempore, illo facilis ratione soluta? Saepe.l Lorem ipsum dolor sit amet consectetur <BR></BR> adipisicing elit. Voluptate, amet ab. Dolor, magnam consectetur? <BR></BR> Rem, dolore, libero suscipit dignissimos maiores ut, unde sapiente esseb <br> officiis nulla delectus vero commodi odio!</P>
+
+
+ <div class="mespages">
+            <H4>voir mes pages</H4>
+</div>
+
+</div>
+
+
+<div class="photo">
+<img src="./mes images/ma photo.jpg" width="300" height="300">
+</div>
+</DIV>
+
+
+
+<section>
+        <h2 class="titre">A Propos de moi</h2>
+        <div class="grille">
+            <div class="apropos">
+                <h3>mon parcours</h3>
+                <p>Café Délice est né d'une passion pour le café artisanal, la pâtisserie maison et les moments partagés
+                    entre amis ou en famille.</p>
+            </div>
+            <div class="apropos">
+                <h3>mes objectifs</h3>
+                <p>Nous sélectionnons des ingrédients frais et locaux pour vous offrir des boissons gourmandes, des
+                    brunchs savoureux et des desserts raffinés.</p>
+            </div>
+            <div class="apropos">
+                <h3>mes qualités </h3>
+                <p>Un décor moderne, doux et accueillant pour travailler, discuter ou tout simplement profiter d'un
+                    instant de calme autour d'un bon café.</p>
+            </div>
+            <div class="apropos">
+                <h3>ce que je recherches</h3>
+                <p>Offrir à chaque visite une expérience unique, avec un service attentionné et des saveurs qui donnent
+                    envie de revenir.</p>
+            </div>
+        </div>
+    </section>
+ <section>
+
+
+
+    <h2 class="titre">mes projet</h2>
+        <div class="galerie-grille">
+            <div class="galerie">
+                <div class="description">
+                    <img src="./mes images/WhatsApp Image 2026-04-17 at 23.08..jpeg" alt="">
+                    <h4>mini site</h4>
+                    <p>Un mélange intense et parfumé.</p>
+                </div>
+            </div>
+            <div class="galerie">
+                <div class="description">
+                    <img src="./mes images/cisco.jpeg" alt="">
+
+                    <h4>web projet</h4>
+                    <P>Fraîcheur et gourmandise à partager.</P>
+                </div>
+            </div>
+
+            <div class="galerie">
+                <div class="description">
+                    <img src="./mes images/IMG-20241127-WA0271.jpg" alt="dessert">
+                    <h4>projet java</h4>
+                    <P>Des douceurs préparées chaque jour.</P>
+                </div>
+            </div>
+            <div class="galerie">
+                <div class="description">
+                    <img src="./mes images/jgffffg.jpeg" alt="coin">
+                    <h4>travail en groupe</h4>
+                    <P>Un espace confortable et apaisant.</P>
+                </div>
+            </div>
+            <div class="galerie">
+                <div class="description">
+                    <img src="./mes images/b u.jpeg" alt="Saveurs Locales">
+                    <h4>presentation academiques</h4>
+                    <P>Des produits choisis avec soin.</P>
+                </div>
+            </div>
+            <div class="galerie">
+                <div class="description">
+                    <img src="./mes images/projet ucad.jpeg" alt="Moments précieux">
+                    <h4>apprentissage du cours</h4>
+                    <P>Des instants simples autour d'un café.</P>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <h2 class="titre">mon profil</h2>
+
+
+ <div class="contentcercle">
+        <div class="cercle"> <h3> 2026</h3>
+        
+        <p>annee de progression et de consolideration</p>
+    </div>
+
+
+        <div class="cercle">    <h3> 5ans+</h3>
+        
+        <p> projet d'apprentissage réalisé</p>
+    </div>
+
+
+        <div class="cercle">   <h3> 100%</h3>
+        
+        <p>motivation pour apprendre et réalisé</p>
+    </div>
+
+        <div class="cercle">   <h3> UI</h3>
+        
+        <p>interet por le web et le designe visuel</p>
+    </div>
+
+
+    </div>
+
+
+     <div class="footer">
+     <h4>contact</h4>
+
+
+    </div>
+
+
+
+
+    <div class="footer2">
+     <p class="parafin"> 2026 amy mbaye portfolio/etudiant</p>
+    </div>
+</body>
+</html>
