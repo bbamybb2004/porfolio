@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
+        /* body { */
 
-            background-color: rgb(217, 217, 245);
+            /* background-color: rgb(217, 217, 245);
 
         }
 
@@ -297,7 +297,259 @@ text-align: left;
             color: rgb(254, 254, 254);
             margin-top: 20px;
 
-        }
+        } */
+
+
+
+        body {
+    background-color: rgb(217, 217, 245);
+    padding-top: 80px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* ================= HEADER ================= */
+.entete {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 10px;
+}
+
+.sss {
+    display: flex;
+    gap: 20px;
+}
+
+.cercle2 {
+    height: 50px;
+    width: 50px;
+    border: 2px solid;
+    background-color: rgb(63, 133, 247);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ================= HERO ================= */
+.bloc {
+    display: flex;
+    padding: 40px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 40px;
+    margin: 40px;
+    gap: 20px;
+}
+
+.texte {
+    width: 50%;
+}
+
+.photo img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #eef2f7;
+    color: #1a2340;
+    width: fit-content;
+    font-size: 14px;
+    padding: 7px 16px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.mespages {
+    background-color: rgb(53, 53, 240);
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    width: fit-content;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.mespages:hover {
+    background-color: rgb(30, 30, 200);
+}
+
+/* ================= SECTIONS ================= */
+section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.titre {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* ================= GRID ================= */
+.grille {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.apropos {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.apropos h3 {
+    color: #0d519e;
+}
+
+/* ================= GALERIE ================= */
+.galerie-grille {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.galerie {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    height: 220px;
+}
+
+.galerie img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.galerie:hover img {
+    transform: scale(1.05);
+}
+
+.description {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(255,255,255,0.8);
+}
+
+/* ================= PROFIL ================= */
+.contentcercle {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cercle {
+    width: 200px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+h3 {
+    color: #0d519e;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.p1 {
+    text-align: left;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(46, 19, 244);
+    color: white;
+    padding: 40px;
+    margin-top: 20px;
+}
+
+.footer2 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* 📱 Téléphone */
+@media (max-width: 768px) {
+
+    .entete {
+        flex-direction: column;
+    }
+
+    .sss {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bloc {
+        flex-direction: column;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .texte {
+        width: 100%;
+    }
+
+    .photo img {
+        width: 100%;
+    }
+
+    .grille {
+        grid-template-columns: 1fr;
+    }
+
+    .galerie-grille {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 📲 Tablette */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .bloc {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .texte {
+        width: 100%;
+    }
+
+    .galerie-grille {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
     </style>
 </head>
 
@@ -355,7 +607,7 @@ text-align: left;
 
 
         <div class="photo">
-            <img src="./mes images/ism.jpeg" width="300" height="300">
+            <img src="./mes images/" width="300" height="300">
         </div>
     </DIV>
 
