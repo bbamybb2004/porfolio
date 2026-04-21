@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<style>
+    <style>
+        body {
 
-body{
+            background-color: rgb(217, 217, 245);
 
-background-color: rgb(217, 217, 245);
+        }
 
-}
-
-.sss{
+        .sss {
             display: flex;
             gap: 20px;
-            
-            
+
+
 
         }
 
 
- .entete {
+        .entete {
 
             display: flex;
             justify-content: space-around;
@@ -29,23 +29,25 @@ background-color: rgb(217, 217, 245);
             color: rgb(1, 0, 0);
             text-align: center;
             position: fixed;
-            width: 100%;   
-            top: 0;  
+            width: 100%;
+            top: 0;
 
         }
- .cercle2 {
+
+        .cercle2 {
 
             height: 50px;
             width: 50px;
-            border: 2px solid ;
-            background-color: rgb(63, 133, 247) ;
+            border: 2px solid;
+            background-color: rgb(63, 133, 247);
             color: aliceblue;
             border-radius: 50px;
-    
+
         }
- .contenu{
-  
-           background-color: rgb(254, 254, 255);
+
+        .contenu {
+
+            background-color: rgb(254, 254, 255);
             height: 40px;
             width: 20%;
             color: rgb(63, 143, 247);
@@ -53,42 +55,59 @@ background-color: rgb(217, 217, 245);
             text-align: center;
             margin-top: 100px;
             display: flex;
-           align-items: center;
-           justify-content: center;
+            align-items: center;
+            justify-content: center;
 
 
 
         }
-        
- 
-.texte{
-        
-          width: 50%;
-         text-align: left;
-
-       } 
-.photo{
-        float: right;
-    
-        
 
 
-}
+        .texte {
 
-.bloc{
+            width: 50%;
+            text-align: left;
 
-        display: flex;
-        padding: 40px; 
-        align-items: center;
-        justify-content: space-between;
-        background-color: rgb(255, 255, 255);
-      border-radius: 40px;
-        
+        }
 
-}
-.mespages{
-  
-           background-color: rgb(53, 53, 240);
+        .photo {
+            float: right;
+
+
+
+
+        }
+
+        .bloc {
+
+            display: flex;
+            padding: 40px;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgb(255, 255, 255);
+            border-radius: 40px;
+
+
+        }
+        .badge{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #eef2f7;
+    color: #1a2340;
+    width: 40%;
+    height: 40px; 
+    font-size: 8px;
+    font-weight: 500;
+    padding: 7px 16px;
+    border-radius: 30px; 
+    margin-bottom: 24px;}
+
+
+
+        .mespages {
+
+            background-color: rgb(53, 53, 240);
             height: 40px;
             width: 20%;
             color: rgb(255, 255, 255);
@@ -96,141 +115,145 @@ background-color: rgb(217, 217, 245);
             text-align: center;
             margin-top: 100px;
             display: flex;
-           align-items: center;
-           justify-content: center;
+            align-items: center;
+            justify-content: center;
 
 
 
         }
 
-    
 
 
 
-        
-section { padding: 60px 40px; }
-
-.titre {
-  font-family: 'Playfair Display', serif;
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 40px;
-  color: var(--texte);
-}
-
-.grille {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  max-width: 9000px;
-  margin: 0 auto;
-}
-
-.apropos{
-  background: #ffffff;
-  border: 1px solid #ffffff;
-  border-radius: 10px;
-  padding: 28px 24px;
-  min-height: 160px;
-}
-
-.apropos h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 16px;
-  color: #0d519e;
-  margin-bottom: 12px;
-}
-        
-
-.apropos p {
-  font-size: 13.5px;
-  color: var(--texte-clair);
-  line-height: 1.7;
-}
-.galerie-grille {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  max-width: 860px;
-  margin: 0 auto;
-}
-
-.galerie {
-  border-radius: 10px;
-  overflow: hidden;
-  position: relative;
-  height: 220px;
-  cursor: pointer;
-}
-
-.galerie img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.4s ease;
-}
-
-.galerie:hover img { 
-  cursor: pointer;
-  transform: scale(1.06); 
-}
-
-.description {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 50px 16px 16px;
-  background: linear-gradient(transparent, rgba(255, 255, 255, 0.75));
-  color: rgb(80, 103, 248);
-}
-
-.description h4 {
-  font-family: 'Playfair Display', serif;
-  font-size: 15px;
-  margin-bottom: 4px;
-}
-
-.description p {
-  font-size: 12px;
-  color: #312f2d;
-  font-weight: 300;
-}
 
 
-.contentcercle{
+        section {
+            padding: 60px 40px;
+        }
+
+        .titre {
+            font-family: 'Playfair Display', serif;
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--texte);
+        }
+
+        .grille {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            max-width: 9000px;
+            margin: 0 auto;
+        }
+
+        .apropos {
+            background: #ffffff;
+            border: 1px solid #ffffff;
+            border-radius: 10px;
+            padding: 28px 24px;
+            min-height: 160px;
+        }
+
+        .apropos h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 16px;
+            color: #0d519e;
+            margin-bottom: 12px;
+        }
 
 
-display: flex;
-justify-content: space-around;
+        .apropos p {
+            font-size: 13.5px;
+            color: var(--texte-clair);
+            line-height: 1.7;
+        }
 
-}
-.cercle{
+        .galerie-grille {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            max-width: 860px;
+            margin: 0 auto;
+        }
 
-    width: 250px;
-    height: 100px;
-border: 2px solid white;
-background-color: #ffffff;
-border-radius: 20px;
+        .galerie {
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            height: 220px;
+            cursor: pointer;
+        }
 
-margin: 40px auto;
-}
+        .galerie img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
 
-h3{
+        .galerie:hover img {
+            cursor: pointer;
+            transform: scale(1.06);
+        }
 
-color: #0d519e;
-text-align: center;
+        .description {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 50px 16px 16px;
+            background: linear-gradient(transparent, rgba(255, 255, 255, 0.75));
+            color: rgb(80, 103, 248);
+        }
 
-}
+        .description h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 15px;
+            margin-bottom: 4px;
+        }
 
-p{
-text-align: center;
+        .description p {
+            font-size: 12px;
+            color: #312f2d;
+            font-weight: 300;
+        }
 
 
-}
+        .contentcercle {
 
 
-  .footer {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .cercle {
+
+            width: 250px;
+            height: 100px;
+            border: 2px solid white;
+            background-color: #ffffff;
+            border-radius: 20px;
+
+            margin: 40px auto;
+        }
+
+        h3 {
+
+            color: #0d519e;
+            text-align: center;
+
+        }
+
+        p {
+            text-align: center;
+
+
+        }
+
+
+        .footer {
             border-radius: 20px;
             display: flex;
             justify-content: space-around;
@@ -239,118 +262,131 @@ text-align: center;
             margin-top: 20px;
             height: 200px;
 
-  }
+        }
 
-  h4{
-text-align: center;
-
-
-  }
-
-  .parafin{
-
-text-align: center;
-margin-top: 20px;
-color: rgb(31, 29, 29);
-border-radius: 20px;
-
-  }
+        h4 {
+            text-align: center;
 
 
+        }
 
-   .footer2 {
+        .parafin {
+
+            text-align: center;
+            margin-top: 20px;
+            color: rgb(31, 29, 29);
+            border-radius: 20px;
+
+        }
+
+
+
+        .footer2 {
             border-radius: 20px;
             display: flex;
             justify-content: space-around;
             background-color: rgb(255, 255, 255);
             color: rgb(254, 254, 254);
             margin-top: 20px;
-        
-   }
 
-
-</style>
+        }
+    </style>
 </head>
+
 <body>
-    
 
 
- <div class="entete">
+
+    <div class="entete">
 
         <div class="cercle2">
             <H5>A M</H5>
         </div>
 
-    <div class="sss">
+        <div class="sss">
             <H5>acceuil</H5>
             <H5> a prpops</H5>
             <H5>pojet</H5>
             <h5>profil</h5>
             <H5>contact</H5>
+        </div>
+
     </div>
 
-      </div>
+
+    
 
 
-<div class="contenu">
-            <H4>portfolio modene et evolutif</H4>
-</div>
+    <div class="bloc">
+
+        <div class="texte">
+            <div class="badge">✨✨portfolio modene et evolutif</div>
+        
+       
+    
+            <h5>
+                CONSTRUIRE MON <BR>PARCOURS AVEC </BR>
+                <BR>PASSION, CREATIVITÉ ET</BR>
+                <BR> AMBITION </BR>
+
+            </h5>
 
 
-<div class="bloc">
-
-<div class="texte">
- <h5>
-CONSTRUIRE MON  <BR>PARCOURS AVEC </BR>
- <BR>PASSION, CREATIVITÉ ET</BR>
- <BR> AMBITION </BR>
-
- </h5>
+            <P> bonjour je suis amy mbaye Lorem ipsum dolor sit, amet consectetur <BR></BR> adipisicing elit. Vero minus
+                tenetur molestiae esse porro dolore <BR></BR> praesentium modi iure doloribus quis magnam reprehenderit
+                iusto <br>delectus tempore, illo facilis ratione soluta? Saepe.l Lorem ipsum dolor sit amet consectetur
+                <BR></BR> adipisicing elit. Voluptate, amet ab. Dolor, magnam consectetur? <BR></BR> Rem, dolore, libero
+                suscipit dignissimos maiores ut, unde sapiente esseb <br> officiis nulla delectus vero commodi odio!</P>
 
 
- <P> bonjour je suis amy mbaye Lorem ipsum dolor sit, amet consectetur <BR></BR> adipisicing elit. Vero minus tenetur molestiae esse porro dolore <BR></BR> praesentium modi iure doloribus quis magnam reprehenderit iusto  <br>delectus tempore, illo facilis ratione soluta? Saepe.l Lorem ipsum dolor sit amet consectetur <BR></BR> adipisicing elit. Voluptate, amet ab. Dolor, magnam consectetur? <BR></BR> Rem, dolore, libero suscipit dignissimos maiores ut, unde sapiente esseb <br> officiis nulla delectus vero commodi odio!</P>
+            <div class="mespages">
+                <H4>voir mes pages</H4>
+            </div>
+
+        </div>
 
 
- <div class="mespages">
-            <H4>voir mes pages</H4>
-</div>
-
-</div>
-
-
-<div class="photo">
-<img src="./mes images/ma photo.jpg" width="300" height="300">
-</div>
-</DIV>
+        <div class="photo">
+            <img src="./mes images/ma photo.jpg" width="300" height="300">
+        </div>
+    </DIV>
 
 
 
-<section>
+    <section>
         <h2 class="titre">A Propos de moi</h2>
         <div class="grille">
             <div class="apropos">
                 <h3>mon parcours</h3>
-                <p>voici mon parcours Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi id dolorem hic, blanditiis nemo excepturi delectus nobis in esse, fugit ipsum dolorum mollitia natus sapiente accusantium, facere velit nesciunt. Cumque.</p>
+                <p>voici mon parcours Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi id dolorem hic,
+                    blanditiis nemo excepturi delectus nobis in esse, fugit ipsum dolorum mollitia natus sapiente
+                    accusantium, facere velit nesciunt. Cumque.</p>
             </div>
             <div class="apropos">
                 <h3>mes objectifs</h3>
-                <p>mes objectifs Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum, sequi voluptatibus assumenda minima, quo nisi soluta recusandae, dolorem numquam nesciunt tenetur? Voluptatem iure dolorem vero sed est eaque aliquid!</p>
+                <p>mes objectifs Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum, sequi
+                    voluptatibus assumenda minima, quo nisi soluta recusandae, dolorem numquam nesciunt tenetur?
+                    Voluptatem iure dolorem vero sed est eaque aliquid!</p>
             </div>
             <div class="apropos">
                 <h3>mes qualités </h3>
-                <p>j'ai beuacoup de qualité Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti a optio, minus laudantium magni ipsum nihil quis esse voluptatum, reprehenderit libero veritatis explicabo sequi maiores quaerat laboriosam, sed ipsam odit.</p>
+                <p>j'ai beuacoup de qualité Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti a optio,
+                    minus laudantium magni ipsum nihil quis esse voluptatum, reprehenderit libero veritatis explicabo
+                    sequi maiores quaerat laboriosam, sed ipsam odit.</p>
             </div>
             <div class="apropos">
                 <h3>ce que je recherches</h3>
-                <p>Offrir à Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore fugit rem, quae exercitationem inventore fugiat amet aspernatur necessitatibus laudantium corporis? Exercitationem labore ut et eius fugiat vero vel rerum eos?.</p>
+                <p>Offrir à Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore fugit rem, quae
+                    exercitationem inventore fugiat amet aspernatur necessitatibus laudantium corporis? Exercitationem
+                    labore ut et eius fugiat vero vel rerum eos?.</p>
             </div>
         </div>
     </section>
- <section>
+    <section>
 
 
 
-    <h2 class="titre">mes projet</h2>
+        <h2 class="titre">mes projet</h2>
         <div class="galerie-grille">
             <div class="galerie">
                 <div class="description">
@@ -402,35 +438,39 @@ CONSTRUIRE MON  <BR>PARCOURS AVEC </BR>
     <h2 class="titre">mon profil</h2>
 
 
- <div class="contentcercle">
-        <div class="cercle"> <h3> 2026</h3>
-        
-        <p>annee de progression et de consolideration</p>
+    <div class="contentcercle">
+        <div class="cercle">
+            <h3> 2026</h3>
+
+            <p>annee de progression et de consolideration</p>
+        </div>
+
+
+        <div class="cercle">
+            <h3> 5ans+</h3>
+
+            <p> projet d'apprentissage réalisé</p>
+        </div>
+
+
+        <div class="cercle">
+            <h3> 100%</h3>
+
+            <p>motivation pour apprendre et réalisé</p>
+        </div>
+
+        <div class="cercle">
+            <h3> UI</h3>
+
+            <p>interet por le web et le designe visuel</p>
+        </div>
+
+
     </div>
 
 
-        <div class="cercle">    <h3> 5ans+</h3>
-        
-        <p> projet d'apprentissage réalisé</p>
-    </div>
-
-
-        <div class="cercle">   <h3> 100%</h3>
-        
-        <p>motivation pour apprendre et réalisé</p>
-    </div>
-
-        <div class="cercle">   <h3> UI</h3>
-        
-        <p>interet por le web et le designe visuel</p>
-    </div>
-
-
-    </div>
-
-
-     <div class="footer">
-     <h4>contact</h4>
+    <div class="footer">
+        <h4>contact</h4>
 
 
     </div>
@@ -439,7 +479,8 @@ CONSTRUIRE MON  <BR>PARCOURS AVEC </BR>
 
 
     <div class="footer2">
-     <p class="parafin"> 2026 amy mbaye portfolio/etudiant</p>
+        <p class="parafin"> 2026 amy mbaye portfolio/etudiant</p>
     </div>
 </body>
+
 </html>
